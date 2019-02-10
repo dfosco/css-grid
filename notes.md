@@ -66,3 +66,17 @@ The `fr` unit takes a `fraction` of the space remaining on the page after all ot
 ```
 
 ### CSS Grid: Grid Repeat Function – 8 of 25
+
+```css
+    /* This: */
+    .grid { grid-template-columns: 1fr 1fr 1fr 1fr }
+    
+    /* Will be the same as this: */
+    .grid { grid-template-columns: repeat(4, 1fr) }
+
+    /* Just as this: */
+    .grid { grid-template-columns: 1fr 2fr 1fr 2fr } 
+
+    /* Will be the same as this: */
+    .grid { grid-template-columns: repeat(2, 1fr 2fr) }
+```
